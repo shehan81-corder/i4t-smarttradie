@@ -22,7 +22,21 @@ function handleLogin(){
 </script>
 
 <style scoped>
-.page{ min-height: 100vh; display:flex; align-items:center; justify-content:center; padding:24px; background:#16a34a; color:#ffffff; }
+.page{ 
+  min-height: 100vh; 
+  width: 100%;
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 24px; 
+  background: #16a34a; 
+  color: #ffffff;
+  /* Ensure content respects safe areas */
+  padding-top: max(24px, var(--safe-area-inset-top, 0px));
+  padding-bottom: max(24px, var(--safe-area-inset-bottom, 0px));
+  padding-left: max(24px, var(--safe-area-inset-left, 0px));
+  padding-right: max(24px, var(--safe-area-inset-right, 0px));
+}
 .content{ width:100%; max-width:420px; text-align:center; }
 .subtitle{ color:#e2fbe8; margin-bottom:24px; }
 button.primary{ width:100%; padding:14px 16px; font-size:16px; border:none; border-radius:12px; background:#15803d; color:#ffffff; box-shadow:0 8px 20px rgba(21,128,61,0.35); }

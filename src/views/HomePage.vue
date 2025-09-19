@@ -42,7 +42,18 @@ function logout(){
 </script>
 
 <style scoped>
-.page{ min-height:100vh; padding:16px; max-width:900px; margin:0 auto; background:#ffffff; color:#16a34a; }
+.page{ 
+  min-height: 100vh; 
+  width: 100%;
+  padding: 16px; 
+  background: #ffffff; 
+  color: #16a34a;
+  /* Ensure content respects safe areas */
+  padding-top: max(16px, var(--safe-area-inset-top, 0px));
+  padding-bottom: max(16px, var(--safe-area-inset-bottom, 0px));
+  padding-left: max(16px, var(--safe-area-inset-left, 0px));
+  padding-right: max(16px, var(--safe-area-inset-right, 0px));
+}
 .top{ display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
 .stats{ display:grid; grid-template-columns: 1fr 1fr; gap:12px; margin-bottom:16px; }
 .card{ background:#dc2626; color:#fff; padding:16px; border-radius:14px; box-shadow:0 6px 16px rgba(14,165,233,0.35);}
