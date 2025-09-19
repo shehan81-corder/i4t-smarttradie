@@ -46,7 +46,7 @@ function logout(){
   min-height: 100vh; 
   width: 100%;
   padding: 16px; 
-  background: #ffffff; 
+  background: #0f4c3a; 
   color: #16a34a;
   /* Ensure content respects safe areas */
   padding-top: max(16px, var(--safe-area-inset-top, 0px));

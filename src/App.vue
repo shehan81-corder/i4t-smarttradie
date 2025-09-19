@@ -25,7 +25,7 @@ body{
   margin: 0; 
   padding: 0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; 
-  background: #ffffff; 
+  background: #0f4c3a; 
   color: #0f172a;
   /* Support for iPhone safe areas */
   padding-top: var(--safe-area-inset-top);
