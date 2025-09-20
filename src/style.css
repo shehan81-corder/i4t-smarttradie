@@ -112,6 +112,28 @@ button:focus-visible {
   }
 }
 
+/* Chrome/Edge specific optimizations */
+@supports (-webkit-appearance: none) {
+  :root {
+    /* Ensure Chrome respects theme color */
+    --theme-color: #0f4c3a;
+  }
+  
+  body {
+    /* Chrome theme color support */
+    background-color: var(--theme-color);
+  }
+}
+
+/* Force theme color for all browsers */
+html {
+  background-color: #0f4c3a;
+}
+
+body {
+  background-color: #0f4c3a !important;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
