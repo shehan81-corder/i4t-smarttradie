@@ -1,7 +1,10 @@
 <template>
   <div class="page login">
     <div class="content">
-      <h1>i4T SmartTradie</h1>
+      <div class="logo">
+        <div class="logo-icon">🔧</div>
+        <h1>i4T SmartTradie</h1>
+      </div>
       <p class="subtitle">Smart job management for tradies</p>
       <button class="primary" @click="handleLogin">Login</button>
     </div>
@@ -38,6 +41,8 @@ function handleLogin(){
   padding-right: max(24px, var(--safe-area-inset-right, 0px));
 }
 .content{ width:100%; max-width:420px; text-align:center; }
+.logo{ margin-bottom:24px; }
+.logo-icon{ font-size:48px; margin-bottom:8px; }
 .subtitle{ color:#e2fbe8; margin-bottom:24px; }
 button.primary{ width:100%; padding:14px 16px; font-size:16px; border:none; border-radius:12px; background:#22c55e; color:#ffffff; box-shadow:0 8px 20px rgba(34,197,94,0.35); }
 button.primary:active{ transform: translateY(1px); }
