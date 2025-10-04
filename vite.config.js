@@ -15,7 +15,7 @@ export default defineConfig({
         theme_color: "#0f4c3a",
         background_color: "#0f4c3a",
         display: "fullscreen",
-        start_url: "/",
+        start_url: "/?fullscreen=true",
         scope: "/",
         orientation: "portrait",
         categories: ["productivity", "business"],
