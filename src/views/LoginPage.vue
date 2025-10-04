@@ -3,7 +3,7 @@
     <div class="content">
       <div class="logo">
         <div class="logo-icon">🔧</div>
-        <h1>i4T SmartTradie</h1>
+        <h1>i4T SmartTradie (new)</h1>
       </div>
       <p class="subtitle">Smart job management for tradies</p>
       <button class="primary" @click="handleLogin">Login</button>
